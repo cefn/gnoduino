@@ -44,7 +44,7 @@ class sconsole:
 	def scan(self):
 		"""scan for available ports. return a list of device names."""
 		ports = []
-		tryports = glob.glob('/dev/ttyS*') + glob.glob('/dev/ttyUSB*') + glob.glob('/dev/ttyACM*')
+		tryports = glob.glob('/dev/ttyS*') + glob.glob('/dev/ttyUSB*') + glob.glob('/dev/ttyACM*') + glob.glob('/dev/rfcomm*')
 		for i in tryports:
 			try:
 				s = serial.Serial(i)
