@@ -344,7 +344,7 @@ def createPopup(title, parent, msg):
 			gtk.BUTTONS_NONE,
 			msg)
 	dialog.add_buttons(_("Close without Saving"), 1, gtk.STOCK_CANCEL, gtk.RESPONSE_CANCEL,
-			gtk.STOCK_SAVE_AS, gtk.RESPONSE_YES)
+			gtk.STOCK_SAVE, gtk.RESPONSE_YES)
 	dialog.format_secondary_text(_("If you don't save, changes will be permanently lost."))
 	dialog.set_default_response(gtk.RESPONSE_CANCEL)
 	response = dialog.run()
